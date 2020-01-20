@@ -1,7 +1,7 @@
 # Личный проект «Глейси»
 
 * Студент: [Артур](https://up.htmlacademy.ru/htmlcss/27/user/811585).
-* Наставник: `Неизвестно`.
+* Наставник: [Евгений Алипкин] (https://htmlacademy.ru/profile/ealipkin).
 
 ---
 
