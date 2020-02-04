@@ -1,40 +1,121 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
 </head>
+
 <body>
     <header>
-      <nav>
-        <a href="index.html">
-            <img src="img/svg-gllacy/logo.svg" width="154" height="64" alt="Логотип Gllacy Shop">
-        </a>
-        <ul>
-         <li><a>Каталог</a></li>
-         <li><a href="">Доставка и оплата</a></li>
-         <li><a href="">О Компании</a></li>
-        </ul>
-        <ul>
-          <li>
-            <button type="button">Поиск</button>
-          </li>
-          <li>
-            <button type="button">Вход</button>
-          </li>
-          <li>
-            <button type="button">Корзина</button>
-          </li>
-        </ul>
-      </nav>
+        <nav>
+            <a href="index.html">
+                <img src="img/svg-gllacy/logo.svg" width="154" height="64" alt="Логотип Gllacy Shop">
+            </a>
+            <ul>
+                <li><a>Каталог</a></li>
+                <li><a href="">Доставка и оплата</a></li>
+                <li><a href="">О Компании</a></li>
+            </ul>
+            <ul>
+                <li>
+                    <button type="button">Поиск</button>
+                    <section>
+                        <h2>Поиск</h2>
+                        <form action="https://echo.htmlacademy.ru" method="POST">
+                          <input type="text" placeholder="Крем-брюле">
+                        </form>
+                      </section>
+                </li>
+                <li>
+                    <button type="button">Вход</button>
+                    <section>
+                        <h2>
+                          Личный кабинет
+                        </h2>
+                        <form action="https://echo.htmlacademy.ru" method="POST">
+                          <p>
+                            <input type="email" placeholder="email@example.com" required>
+                          </p>
+                          <p>
+                            <input type="password" placeholder="********" required>
+                          </p>
+                          <button type="submit">
+                            Войти
+                          </button>
+                          <a href="#">Забыли пароль</a>
+                          <a href="#">Новая регистрация</a>
+                        </form>
+                      </section>
+                </li>
+                <li>
+                    <button type="button">Корзина</button>
+                    <section>
+                        <button type="button">Оформить заказ</button   >
+                    </section>
+                </li>
+            </ul>
+        </nav>
     </header>
     <main>
         <h1>Сливочное</h1>
         <section>
             <h2>Фильтр мороженного</h2>
-            <!-- Тут бцдет форма -->
+            <p>
+                <form action="https://echo.htmlacademy.ru" method="POST">
+                    <p>Сортировка
+                        <label>
+                            <select name="" id="">
+                                <option value="">по популярности</option>
+                            </select>
+                        </label>
+                    </p>
+                    <p>
+                        <label>Цена
+                            <input type="range">
+                        </label>
+                    </p>
+                    <p>Жирность
+                        <label>0 %
+                            <input type="radio" name="fat">
+                        </label>
+                        <label>до 10 %
+                            <input type="radio" name="fat" checked>
+                        </label>
+                        <label>до 30 %
+                            <input type="radio" name="fat">
+                        </label>
+                        <label>выше 30 %
+                            <input type="radio" name="fat">
+                        </label>
+                    </p>
+                    <p>
+                        Наполнители
+                        <label>
+                            <input type="checkbox" checked>шоколадные
+                        </label>
+                        <label>
+                            <input type="checkbox" checked>сахарные присыпки
+                        </label>
+                        <label>
+                            <input type="checkbox">фрукты
+                        </label>
+                        <label>
+                            <input type="checkbox">сиропы
+                        </label>
+                        <label>
+                            <input type="checkbox">джемы
+                        </label>
+                    </p>
+                    <p>
+                        <button type="submit">
+                            Применить
+                        </button>
+                    </p>
+                </form>
+            </p>
         </section>
         <ul>
             <li><a href="index.html">Главная</a></li>
@@ -42,16 +123,15 @@
             <li>Сливочное</li>
         </ul>
         <p>
-            C 10 до 20, ежедневно<br>
-            <span>
-                8 812 450-25-25
-            </span>
+            C 10 до 20, ежедневно
+            <a href="tel:88124502525">8 812 450-25-25</a>
         </p>
         <section>
             <ul>
                 <li>
                     <figure>
-                        <a href=""><img src="img/jpg-gllacy/product-1.jpg" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой"></a>
+                        <img src="img/jpg-gllacy/product-1.jpg"
+                            alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
                         <p>
                             <span>310P</span>/кг
                         </p>
@@ -60,7 +140,7 @@
                 </li>
                 <li>
                     <figure>
-                        <a href=""><img src="img/jpg-gllacy/product-2.jpg" alt="Сливочно-кофейное с кусочками шоколада"></a>
+                        <img src="img/jpg-gllacy/product-2.jpg" alt="Сливочно-кофейное с кусочками шоколада">
                         <p>
                             <span>380P</span>/кг
                         </p>
@@ -69,7 +149,8 @@
                 </li>
                 <li>
                     <figure>
-                        <a href=""><img src="img/jpg-gllacy/product-3.jpg" alt="Сливочно-клубничное с присыпкой из белого шоколада"></a>
+                        <img src="img/jpg-gllacy/product-3.jpg"
+                            alt="Сливочно-клубничное с присыпкой из белого шоколада">
                         <p>
                             <span>355P</span>/кг
                         </p>
@@ -78,7 +159,7 @@
                 </li>
                 <li>
                     <figure>
-                        <a href=""><img src="img/jpg-gllacy/product-4.jpg" alt="Сливочное крем-брюле с карамельной подливкой"></a>
+                        <img src="img/jpg-gllacy/product-4.jpg" alt="Сливочное крем-брюле с карамельной подливкой">
                         <p>
                             <span>415P</span>/кг
                         </p>
@@ -87,7 +168,7 @@
                 </li>
                 <li>
                     <figure>
-                        <a href=""><img src="img/jpg-gllacy/product-5.jpg" alt="Сливочное с брусничным джемом"></a>
+                        <img src="img/jpg-gllacy/product-5.jpg" alt="Сливочное с брусничным джемом">
                         <p>
                             <span>325P</span>/кг
                         </p>
@@ -96,7 +177,7 @@
                 </li>
                 <li>
                     <figure>
-                        <a href=""><img src="img/jpg-gllacy/product-6.jpg" alt="Сливочно-черничное с цельными ягодами черники"></a>
+                        <img src="img/jpg-gllacy/product-6.jpg" alt="Сливочно-черничное с цельными ягодами черники">
                         <p>
                             <span>410P</span>/кг
                         </p>
@@ -105,7 +186,7 @@
                 </li>
                 <li>
                     <figure>
-                        <a href=""><img src="img/jpg-gllacy/product-7.jpg" alt="Сливочно-лимонное с карамельной присыпкой"></a>
+                        <img src="img/jpg-gllacy/product-7.jpg" alt="Сливочно-лимонное с карамельной присыпкой">
                         <p>
                             <span>375P</span>/кг
                         </p>
@@ -114,7 +195,7 @@
                 </li>
                 <li>
                     <figure>
-                        <a href=""><img src="img/jpg-gllacy/product-8.jpg" alt="Сливочное с шоколадной стружкой"></a>
+                        <img src="img/jpg-gllacy/product-8.jpg" alt="Сливочное с шоколадной стружкой">
                         <p>
                             <span>320P</span>/кг
                         </p>
@@ -123,7 +204,7 @@
                 </li>
                 <li>
                     <figure>
-                        <a href=""><img src="img/jpg-gllacy/product-9.jpg" alt="Сливочно-ванильное с кусочками шоколада"></a>
+                        <img src="img/jpg-gllacy/product-9.jpg" alt="Сливочно-ванильное с кусочками шоколада">
                         <p>
                             <span>440P</span>/кг
                         </p>
@@ -132,7 +213,7 @@
                 </li>
                 <li>
                     <figure>
-                        <a href=""><img src="img/jpg-gllacy/product-10.jpg" alt="Сливочноe с ментоловым сиропом"></a>
+                        <img src="img/jpg-gllacy/product-10.jpg" alt="Сливочноe с ментоловым сиропом">
                         <p>
                             <span>435P</span>/кг
                         </p>
@@ -141,7 +222,7 @@
                 </li>
                 <li>
                     <figure>
-                        <a href=""><img src="img/jpg-gllacy/product-11.jpg" alt="Сливочное с кусочками черного шоколада"></a>
+                        <img src="img/jpg-gllacy/product-11.jpg" alt="Сливочное с кусочками черного шоколада">
                         <p>
                             <span>355P</span>/кг
                         </p>
@@ -150,7 +231,7 @@
                 </li>
                 <li>
                     <figure>
-                        <a href=""><img src="img/jpg-gllacy/product-12.jpg" alt="Сливочное с мятным сиропом"></a>
+                        <img src="img/jpg-gllacy/product-12.jpg" alt="Сливочное с мятным сиропом">
                         <p>
                             <span>420P</span>/кг
                         </p>
@@ -158,7 +239,10 @@
                     </figure>
                 </li>
             </ul>
-            <ol>
+            <ul>
+                <li>
+                    <button type="button"></button>
+                </li>
                 <li>
                     <a>1</a>
                 </li>
@@ -174,30 +258,34 @@
                 <li>
                     <a href="#">5</a>
                 </li>
-            </ol>
+                <li>
+                    <button type="button"></button>
+                </li>
+            </ul>
         </section>
     </main>
     <footer>
-      <div>
-        <ul>
-          <li><a href="">Твиттер</a></li>
-          <li><a href="">Инстаграмм</a></li>
-          <li><a href="">Фейсбук</a></li>
-          <li><a href="">Вконтакте</a></li>
-        </ul>
-      </div>
-      <p>
-        <ul>
-          <li><a href="">Для поставщиков</a></li>
-          <li><a href="">О производстве</a></li>
-          <li><a href="">Наши документы</a></li>
-          <li><a href="">Экологические стандарты</a></li>
-        </ul>
-      </p>
-      <p>
-        <img src="img/svg-gllacy/logo-htmlacademy.svg" width="108px" height="39px" alt="HTML Academy">
-        Сделано в <span>HTML Academy</span> © 2019
-      </p>
+        <div>
+            <ul>
+                <li><a href="">Твиттер</a></li>
+                <li><a href="">Инстаграмм</a></li>
+                <li><a href="">Фейсбук</a></li>
+                <li><a href="">Вконтакте</a></li>
+            </ul>
+        </div>
+        <p>
+            <ul>
+                <li><a href="">Для поставщиков</a></li>
+                <li><a href="">О производстве</a></li>
+                <li><a href="">Наши документы</a></li>
+                <li><a href="">Экологические стандарты</a></li>
+            </ul>
+        </p>
+        <p>
+            <img src="img/svg-gllacy/logo-htmlacademy.svg" width="108px" height="39px" alt="HTML Academy">
+            Сделано в <span>HTML Academy</span> © 2019
+        </p>
     </footer>
-  </body>
+</body>
+
 </html>
